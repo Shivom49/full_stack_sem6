@@ -1,36 +1,38 @@
-⚙️ Working Explanation
-🔹 Backend
+## ⚙️ Working Explanation
 
-Node.js and Express.js are used to create the server and handle HTTP requests.
+### 🔹 Backend
 
-🔹 Database
+The backend of the application is developed using **Node.js** and **Express.js**.
+Node.js provides the runtime environment, while Express.js is used to create the server and handle HTTP requests efficiently. It defines the API routes and manages client-server communication.
 
-MongoDB is used to store user data such as name, email, and age.
+---
 
-🔹 Mongoose
+### 🔹 Database
 
-Mongoose is used to define schema and interact with MongoDB easily.
+**MongoDB** is used as the database to store user information such as name, email, and age. It is a NoSQL database that stores data in JSON-like format, making it flexible and easy to use.
 
-🔄 CRUD Operations
-1. Create User (POST)
-Adds new user to database
-2. Read Users (GET)
-Fetches all users from database
-3. Update User (PUT)
-Updates user data using ID
-4. Delete User (DELETE)
-Deletes user using ID
-🌐 API Endpoints
-Method	Endpoint	Description
-POST	/addUser	Add new user
-GET	/getUsers	Get all users
-PUT	/updateUser/	Update user
-DELETE	/deleteUser/	Delete user
-🧪 Testing
+---
 
-All APIs are tested using Thunder Client / Postman by sending HTTP requests:
+### 🔹 Mongoose
 
-POST request with JSON body
-GET request to fetch data
-PUT request with ID to update
-DELETE request with ID to remove data
+**Mongoose** is used as an Object Data Modeling (ODM) library. It helps in defining the schema (structure of data) and provides methods to interact with the MongoDB database, such as creating, reading, updating, and deleting records.
+
+---
+
+## 🔄 CRUD Operations
+
+### 1. Create User (POST)
+
+Adds a new user to the database by sending user data through a POST request.
+
+### 2. Read Users (GET)
+
+Retrieves all user records from the database using a GET request.
+
+### 3. Update User (PUT)
+
+Updates existing user data in the database using a unique user ID.
+
+### 4. Delete User (DELETE)
+
+Deletes a user record from the database using a unique user ID.
